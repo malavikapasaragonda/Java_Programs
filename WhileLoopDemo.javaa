@@ -1,0 +1,21 @@
+package name;
+
+public class WhileLoopDemo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in );
+
+        System.out.print("Enter a number to start the countdown:5 ");
+        int startNumber = scanner.nextInt();
+
+        countdown(startNumber);
+
+        scanner.close();
+    }
+
+    public static void countdown(int n) {
+        while (n > 0) {
+            System.out.println(n);
+            n--;
+        }
+    }
+}
